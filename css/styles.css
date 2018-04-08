@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #000;
+  font-family: "Roboto", sans-serif; }
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-image: url("../img/horizontal-border.png") 30 round;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-image: url("../img/horizontal-border.png") 30 round;
+  width: 1150px;
+  height: 850px;
+  position: relative; }
+
+#canvas {
+  background: #112232;
+  position: relative; }
+
+#playground {
+  width: 900px;
+  height: 700px;
+  background: url("../img/dark_grass.jpg");
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.gameMenu {
+  color: #fff;
+  width: 300px;
+  padding: 15px 0;
+  background: url("../img/game-menu-bg.jpg");
+  border: 5px solid transparent;
+  border-image: url("../img/vertical-border.png") 30 round;
+  border-radius: 10px;
+  text-align: center; }
+  .gameMenu p {
+    font-size: 16pt; }
+  .gameMenu p:not(:first-child) {
+    font-size: 16pt;
+    margin-top: 10px; }
+  .gameMenu h2:not(:first-child) {
+    margin-top: 10px; }
+  .gameMenu input[type*=text] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 12pt; }
+  .gameMenu input[type*=button] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background: url("../img/game-menu-bg.jpg");
+    font-size: 16pt; }
+
+.Leaderboard {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .Leaderboard table {
+    font-size: 14pt;
+    width: 70%; }
+
+#bottomPart {
+  background: url("../img/dirt.jpg");
+  color: #fff;
+  font-size: 16pt;
+  position: absolute;
+  bottom: 0;
+  width: 900px;
+  height: 130px;
+  border-top: 10px solid transparent;
+  border-image: url("../img/horizontal-border.png") 30 round; }
+  #bottomPart input {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 16pt; }
+  #bottomPart p {
+    margin-left: 30px;
+    padding-top: 10px; }
+  #bottomPart #scoreDiv {
+    position: absolute;
+    top: 0;
+    right: 20px; }
+
+#rightSide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 16pt;
+  width: 230px;
+  height: 830px;
+  border-left: 10px solid transparent;
+  border-image: url("../img/horizontal-border.png") 30 round;
+  background: url("../img/wood-bg.jpg"); }
+  #rightSide p {
+    margin-top: 20px;
+    margin-left: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

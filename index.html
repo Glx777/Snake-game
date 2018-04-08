@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Snake game">
+		<meta name="author" content="Dmitrii Zapolskikh">
+		<title>Snake game</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="img/Website_icon.png">
+	</head>
+	<body>
+		<div id="wrapper">
+			<canvas id="canvas" width="900" height="700"></canvas>
+			<div id="playground">
+				<div class="gameMenu" id="gameStart">
+					<p>Ваше имя:</p>
+					<input type="text" id="nameInput"><br>
+					<input type="button" id="startGame_btn" name="startGame" value="Начать игру">
+				</div>
+				<div class="gameMenu" id="gameLost">
+					<h2>Вы проиграли :(</h2>
+	        <p>Ваш счет: <span class="Score"></span></p>
+					<h2>Таблица рекордов</h2>
+					<div class="Leaderboard">
+						<table class="Datas"></table>
+				  </div>
+					<input type="button" value="Начать заново" id="startAgainFromGameLost">
+					<input type="button" value="Главное меню" id="toMainMenuFromGameLost">
+					<form id="myForm" action="php/add.php" method="post">
+						<input type="hidden" class="info" id="namePhp_input" name="name_php">
+						<input type="hidden" class="info" id="scorePhp_input" name="score_php">
+					</form>
+				</div>
+				<div class="gameMenu" id="gameWin">
+					<h2>Поздравляем <span id="winnerName"></span></h2>
+					<p>Ваш счет: <span class="Score"></span></p>
+					<h2>Таблица рекордов</h2>
+					<div class="Leaderboard">
+						<table class="Datas"></table>
+				  </div>
+					<input type="button" value="Начать заново" id="startAgainFromGameWin">
+					<input type="button" value="Главное меню" id="toMainMenuFromGameWin">
+				</div>
+			</div>
+			<div id="bottomPart">
+				<p>Время: <span id="gameTime">05:00</span></p>
+				<input id="pause_btn" type="button" value="Пауза">
+				<p id="scoreDiv">Счет: <span class="Score">0</span></p>
+			</div>
+			<div id="rightSide">
+				<p>Имя: <span id="name"></span></p>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/snake.js"></script>
+		<script src="js/render.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/timer.js"></script>
+	</body>
+</html>

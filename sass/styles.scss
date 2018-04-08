@@ -1,0 +1,133 @@
+$hb: url("../img/horizontal-border.png") 30 round;
+$vb: url("../img/vertical-border.png") 30 round;
+$b: 10px solid transparent;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  font-family: "Roboto", sans-serif;
+}
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  border-left: $b;
+  border-right: $b;
+  border-image: $hb;
+  border-top: $b;
+  border-bottom: $b;
+  border-image: $hb;
+  width: 1150px;
+  height: 850px;
+  position: relative;
+}
+#canvas {
+  background: #112232;
+  position: relative;
+}
+#playground {
+  width: 900px;
+  height: 700px;
+  background: url("../img/dark_grass.jpg");
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.gameMenu {
+  color: #fff;
+  width: 300px;
+  padding: 15px 0;
+  background: url("../img/game-menu-bg.jpg");
+  border: 5px solid transparent;
+  border-image: $vb;
+  border-radius: 10px;
+  text-align: center;
+  p {
+    font-size: 16pt;
+  }
+  p:not(:first-child) {
+    font-size: 16pt;
+    margin-top: 10px;
+  }
+  h2:not(:first-child) {
+    margin-top: 10px;
+  }
+  input[type*=text] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 12pt;
+  }
+  input[type*=button] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background: url("../img/game-menu-bg.jpg");
+    font-size: 16pt;
+  }
+}
+.Leaderboard {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  table {
+    font-size: 14pt;
+    width: 70%;
+  }
+}
+#bottomPart {
+  background: url("../img/dirt.jpg");
+  color: #fff;
+  font-size: 16pt;
+  position: absolute;
+  bottom: 0;
+  width: 900px;
+  height: 130px;
+  border-top: $b;
+  border-image: $hb;
+  input {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 16pt;
+  }
+  p {
+    margin-left: 30px;
+    padding-top: 10px;
+  }
+  #scoreDiv {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+}
+#rightSide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 16pt;
+  width: 230px;
+  height: 830px;
+  border-left: $b;
+  border-image: $hb;
+  background: url("../img/wood-bg.jpg");
+  p {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
